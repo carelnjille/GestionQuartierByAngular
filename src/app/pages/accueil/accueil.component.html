@@ -1,0 +1,58 @@
+<div class="accueil-container">
+  <h2>Tableau de bord</h2>
+  <div class="dashboard">
+    <!-- Zone gauche : Actions -->
+    <div class="left-panel">
+      <div class="section">
+        <h3>Catégorie de Maison</h3>
+        <div class="actions">
+          <button class="btn green">Créer</button>
+          <button class="btn blue">Modifier</button>
+          <button class="btn red">Supprimer</button>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Quartier</h3>
+        <div class="actions">
+          <button class="btn green">Créer</button>
+          <button class="btn blue">Modifier</button>
+          <button class="btn red">Supprimer</button>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Maison</h3>
+        <div class="actions">
+          <button class="btn green">Créer</button>
+          <button class="btn blue">Modifier</button>
+          <button class="btn red">Supprimer</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Zone droite : Listes -->
+    <div class="right-panel">
+      <div class="list-section">
+        <h3>Catégories ({{ categories.length }})</h3>
+        <ul>
+          <li *ngFor="let c of categories" class="cat">{{ c }}</li>
+        </ul>
+      </div>
+
+      <div class="list-section">
+        <h3>Quartiers ({{ quartiers.length }})</h3>
+        <ul>
+          <li *ngFor="let q of quartiers" class="quart">{{ q }}</li>
+        </ul>
+      </div>
+
+      <div class="list-section">
+        <h3>Maisons ({{ maisons.length }})</h3>
+        <ul>
+          <li *ngFor="let m of maisons" class="maison">{{ m }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

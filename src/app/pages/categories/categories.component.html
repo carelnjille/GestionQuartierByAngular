@@ -1,0 +1,26 @@
+<div class="categories-page">
+  <!-- Formulaire -->
+  <div class="formulaire">
+    <h2>Ajouter une catégorie</h2>
+    <form (ngSubmit)="ajouterCategorie()">
+      <label for="nom">Nom de la catégorie :</label>
+      <input type="text" id="nom" [(ngModel)]="nom" name="nom" required>
+
+      <label for="description">Description :</label>
+      <textarea id="description" [(ngModel)]="description" name="description"></textarea>
+
+      <button type="submit">Ajouter</button>
+    </form>
+  </div>
+
+  <!-- Liste des catégories -->
+  <div class="liste-categories">
+    <h2>Liste des catégories</h2>
+    <ul>
+      <li *ngFor="let cat of categories">
+        <strong>{{ cat.nom }}</strong><br>
+        <strong>{{ cat.description }}</strong>
+      </li>
+    </ul>
+  </div>
+</div>

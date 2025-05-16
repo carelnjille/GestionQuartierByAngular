@@ -1,0 +1,58 @@
+/* Conteneur principal de la page */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* hauteur minimale de la page */
+}
+
+/* Contenu principal */
+.content {
+  flex: 1; /* occupe tout l’espace vertical restant */
+}
+
+/* Footer fixé en bas sans position absolute */
+.footer {
+  margin-top: auto;
+  padding: 20px 40px;
+  background-color: #333;
+  color: white;
+  width: 100%;
+}
+
+/* Centrage du texte */
+.footer p {
+  padding-block: 5px;
+  font-style: italic;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Mise en page en grille */
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 5px;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Liens du footer */
+.footer-link {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+
+.footer-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}

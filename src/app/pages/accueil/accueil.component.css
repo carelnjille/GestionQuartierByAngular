@@ -1,0 +1,179 @@
+.dashboard {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.left-panel {
+  flex: 1;
+  border-right: 2px solid #ccc;
+  padding-right: 20px;
+}
+
+.panel-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-box {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.green {
+  background-color: #28a745;
+}
+
+.blue {
+  background-color: #007bff;
+}
+
+.red {
+  background-color: #dc3545;
+}
+
+.right-panel {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.list-section {
+  margin-bottom: 30px;
+}
+
+.list-section h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.cat {
+  background-color: #f39c12;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  color: white;
+  font-weight: bold;
+}
+
+.quart {
+  background-color: #f5b642;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  color: white;
+  font-weight: bold;
+}
+
+.maison {
+  background-color: #f7c702;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+.accueil-container {
+  padding: 20px;
+}
+
+.dashboard {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+}
+
+.left-panel {
+  flex: 1;
+  border-right: 2px solid #ccc;
+  padding-right: 20px;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.actions button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.green { background-color: green; }
+.blue { background-color: blue; }
+.red { background-color: red; }
+
+.right-panel {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.list-section {
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.cat {
+  background-color: darkorange;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  color: white;
+  font-weight: bold;
+}
+
+.quart {
+  background-color: orange;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  color: white;
+  font-weight: bold;
+}
+
+.maison {
+  background-color: gold;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}

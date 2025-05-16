@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  padding: 20px;
+}
+
+.formulaire {
+  width: 40%;
+  padding-right: 20px;
+}
+
+.liste {
+  width: 60%;
+}
+
+.separator {
+  width: 2px;
+  background-color: #ccc;
+  margin: 0 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input, form button {
+  padding: 8px;
+  margin-top: 5px;
+}
+
+form button {
+  margin-top: 15px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

@@ -1,0 +1,30 @@
+<div class="container">
+  <!-- FORMULAIRE À GAUCHE -->
+  <div class="formulaire">
+    <h2>Créer un Quartier</h2>
+    <form (ngSubmit)="ajouterQuartier()">
+      <label>Nom :</label>
+      <input type="text" [(ngModel)]="nom" name="nom" required />
+
+      <label>Superficie (m²) :</label>
+      <input type="number" [(ngModel)]="superficie" name="superficie" required />
+
+      <label>Nombre de maisons :</label>
+      <input type="number" [(ngModel)]="nbMaisons" name="nbMaisons" required />
+
+      <button type="submit">Ajouter</button>
+    </form>
+  </div>
+ 
+  <div class="separator"></div>
+
+ 
+  <div class="cartes">
+    <app-quartier-card 
+      *ngFor="let q of quartiers"
+      [nom]="q.nom"
+      [superficie]="q.superficie"
+      [nbMaisons]="q.nbMaisons">
+    </app-quartier-card>
+  </div>
+</div>

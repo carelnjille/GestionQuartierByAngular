@@ -1,0 +1,12 @@
+<nav class="navbar">
+  <h1 style="color: white;">GQ</h1> 
+  <ul class="nav-links" [class.open]="menuOpen">
+    <li><a routerLink="/" [class.disabled]="isLoginPage" [attr.aria-disabled]="isLoginPage ? 'true' : null">Accueil</a></li>
+    <li><a routerLink="/connexion" [class.disabled]="isLoginPage" [attr.aria-disabled]="isLoginPage ? 'true' : null">Connexion</a></li>
+    <li><a routerLink="/deconnexion" [class.disabled]="isLoginPage" [attr.aria-disabled]="isLoginPage ? 'true' : null">Déconnexion</a></li>
+    <li><a routerLink="/maisons" [class.disabled]="isLoginPage" [attr.aria-disabled]="isLoginPage ? 'true' : null">Maisons</a></li>
+    <li><a routerLink="/quartiers" [class.disabled]="isLoginPage" [attr.aria-disabled]="isLoginPage ? 'true' : null">Quartiers</a></li>
+    <li><a routerLink="/categories" [class.disabled]="isLoginPage" [attr.aria-disabled]="isLoginPage ? 'true' : null">Catégories</a></li>
+  </ul>
+  <button class="menu-toggle" (click)="toggleMenu()">☰</button>
+</nav>

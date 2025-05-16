@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="formulaire">
+    <h2>Ajouter une maison</h2>
+    <form (ngSubmit)="ajouterMaison()">
+      <label>Catégorie</label>
+      <input type="text" [(ngModel)]="categorie" name="categorie" required>
+
+      <label>Superficie</label>
+      <input type="number" [(ngModel)]="superficie" name="superficie" required>
+
+      <label>Adresse</label>
+      <input type="text" [(ngModel)]="adresse" name="adresse" required>
+
+      <button type="submit">Ajouter</button>
+    </form>
+  </div>
+
+  <div class="separator"></div>
+
+  <div class="liste">
+    <h2>Liste des maisons</h2>
+    <app-maison-card
+      *ngFor="let maison of maisons"
+      [maison]="maison">
+    </app-maison-card>
+  </div>
+</div>
