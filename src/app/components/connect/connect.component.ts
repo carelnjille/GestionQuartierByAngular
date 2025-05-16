@@ -6,6 +6,7 @@ import { Router } from '@angular/router';
   selector: 'app-connect',
   standalone: true,  
   imports: [FormsModule],  
+  templateUrl: './connect.component.html',
   styleUrls: ['./connect.component.css']
 })
 export class ConnectComponent {
