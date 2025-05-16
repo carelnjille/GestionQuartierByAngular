@@ -1,4 +1,3 @@
-/* Styles de base */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -6,17 +5,17 @@
   padding: 10px 20px;
   background-color: #333;
   position: relative;
-  z-index: 1000; /* pour le superposer si nécessaire */
+  z-index: 1000;  
   padding-inline: 7%;
 }
 a.disabled {
-  pointer-events: none; /* Empêche l'interaction avec le lien */
-  color: gray; /* Change la couleur du lien pour indiquer qu'il est désactivé */
-  text-decoration: none; /* Enlève le soulignement */
+  pointer-events: none;  
+  color: gray;  
+  text-decoration: none; 
 }
 
 a.disabled:hover {
-  background-color: transparent; /* Enlève tout effet visuel de survol sur un lien désactivé */
+  background-color: transparent;  
 }
 
 .logo {
@@ -25,14 +24,14 @@ a.disabled:hover {
   font-weight: bold;
 }
 
-/* Liens de navigation */
+ 
 .nav-links {
   list-style: none;
   display: flex;
   gap: 20px;
 }
 
-/* Styles des liens */
+
 .nav-links a {
   color: #fff;
   text-decoration: none;
@@ -45,7 +44,7 @@ a.disabled:hover {
   border-radius: 4px;
 }
 
-/* Bouton menu pour mobile */
+ 
 .menu-toggle {
   display: none;
   font-size: 1.5em;
@@ -57,7 +56,7 @@ a.disabled:hover {
 
 /* Responsive */
 @media (max-width: 768px) {
-  /* Masquer les liens par défaut */
+   
   .nav-links {
     position: absolute;
     top: 60px;
@@ -65,17 +64,17 @@ a.disabled:hover {
     background-color: #333;
     flex-direction: column;
     width: 200px;
-    display: none; /* Masqué par défaut */
+    display: none;  
     padding: 10px;
     border-radius: 4px;
   }
 
-  /* Afficher lorsque menuOpen est vrai */
+   
   .nav-links.open {
     display: flex;
   }
 
-  /* Afficher le bouton menu */
+   
   .menu-toggle {
     display: block;
     background: none;

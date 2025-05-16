@@ -1,16 +1,16 @@
-/* Conteneur principal de la page */
+ 
 .page-wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* hauteur minimale de la page */
+  min-height: 100vh;  
 }
 
-/* Contenu principal */
+ 
 .content {
-  flex: 1; /* occupe tout l’espace vertical restant */
+  flex: 1;  
 }
 
-/* Footer fixé en bas sans position absolute */
+ 
 .footer {
   margin-top: auto;
   padding: 20px 40px;
@@ -19,7 +19,7 @@
   width: 100%;
 }
 
-/* Centrage du texte */
+ 
 .footer p {
   padding-block: 5px;
   font-style: italic;
@@ -27,7 +27,7 @@
   text-align: center;
 }
 
-/* Mise en page en grille */
+ 
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -40,7 +40,7 @@
   margin: 0 auto;
 }
 
-/* Liens du footer */
+ 
 .footer-link {
   display: block;
   padding: 10px 20px;
